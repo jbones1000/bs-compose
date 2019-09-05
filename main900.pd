@@ -126,7 +126,7 @@
 #X connect 27 0 22 0;
 #X restore 287 349 pd tom;
 #X obj 406 431 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 1200 1;
+-1 -1 2500 1;
 #X obj 403 451 / 127;
 #X msg 403 492 master-vol \$1;
 #X obj 579 446 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
@@ -144,7 +144,6 @@
 #X obj 485 172 loadbang;
 #X obj 485 193 del 2000;
 #X obj 485 214 t b b b b b;
-#X msg 463 305 12;
 #X msg 625 270 \; pd dsp 1;
 #X obj 372 120 master-360;
 #X msg 441 83 120;
@@ -154,6 +153,8 @@
 #X obj 225 265 route 1 2;
 #X obj 226 237 comp-sel ../bs-compose/texts900/texts 2;
 #X msg 322 68 0;
+#X floatatom 173 211 5 0 0 0 - - -;
+#X msg 463 305 25;
 #X connect 0 0 13 0;
 #X connect 1 0 0 0;
 #X connect 2 0 0 0;
@@ -167,21 +168,22 @@
 #X connect 10 0 13 1;
 #X connect 11 0 9 0;
 #X connect 12 0 10 0;
-#X connect 14 0 28 0;
+#X connect 14 0 27 0;
+#X connect 14 0 29 0;
 #X connect 17 0 18 0;
 #X connect 18 0 19 0;
-#X connect 19 0 25 0;
-#X connect 19 1 24 0;
-#X connect 19 2 23 0;
-#X connect 19 3 20 0;
-#X connect 19 4 21 0;
-#X connect 20 0 3 0;
-#X connect 22 0 14 0;
-#X connect 23 0 22 2;
-#X connect 24 0 22 0;
-#X connect 25 0 28 2;
-#X connect 26 0 28 3;
-#X connect 27 0 1 0;
-#X connect 27 1 2 0;
-#X connect 28 0 27 0;
-#X connect 29 0 22 0;
+#X connect 19 0 24 0;
+#X connect 19 1 23 0;
+#X connect 19 2 22 0;
+#X connect 19 3 30 0;
+#X connect 19 4 20 0;
+#X connect 21 0 14 0;
+#X connect 22 0 21 2;
+#X connect 23 0 21 0;
+#X connect 24 0 27 2;
+#X connect 25 0 27 3;
+#X connect 26 0 1 0;
+#X connect 26 1 2 0;
+#X connect 27 0 26 0;
+#X connect 28 0 21 0;
+#X connect 30 0 3 0;
