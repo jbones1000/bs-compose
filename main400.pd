@@ -14,7 +14,7 @@
 #X obj 247 362 cross-over-out 5000 5000 1 0.5;
 #X msg 31 337 master-vol \$1;
 #X obj 35 290 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 7000 1;
+-1 -1 1200 1;
 #X obj 32 310 / 127;
 #X obj 20 147 loadbang;
 #X obj 20 168 del 2000;
@@ -50,6 +50,7 @@
 #X connect 17 3 22 0;
 #X connect 17 4 19 0;
 #X connect 17 5 18 0;
+#X connect 17 5 25 0;
 #X connect 19 0 13 0;
 #X connect 20 0 21 3;
 #X connect 21 0 4 0;
