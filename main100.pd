@@ -159,6 +159,7 @@
 #X obj 709 126 jwy-sync-r 3003;
 #X obj 406 27 r jwy-sync-bpm;
 #X obj 296 26 r jwy-sync-pulse;
+#X obj 709 147 route vol;
 #X connect 0 0 13 0;
 #X connect 1 0 0 0;
 #X connect 2 0 0 0;
@@ -191,5 +192,7 @@
 #X connect 29 0 31 1;
 #X connect 30 0 31 1;
 #X connect 31 0 25 0;
+#X connect 32 0 35 0;
 #X connect 33 0 21 2;
 #X connect 34 0 21 1;
+#X connect 35 0 3 0;
