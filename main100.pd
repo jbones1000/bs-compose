@@ -156,6 +156,9 @@
 #X msg 383 275 write 2;
 #X msg 443 237 read 2;
 #X obj 227 221 seqq ../bs-compose/texts100/texts 2;
+#X obj 709 126 jwy-sync-r 3003;
+#X obj 406 27 r jwy-sync-bpm;
+#X obj 296 26 r jwy-sync-pulse;
 #X connect 0 0 13 0;
 #X connect 1 0 0 0;
 #X connect 2 0 0 0;
@@ -188,3 +191,5 @@
 #X connect 29 0 31 1;
 #X connect 30 0 31 1;
 #X connect 31 0 25 0;
+#X connect 33 0 21 2;
+#X connect 34 0 21 1;
