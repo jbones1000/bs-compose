@@ -28,8 +28,8 @@
 #X msg 481 48 write 2;
 #X msg 466 79 read 2;
 #X obj 290 98 count-360 4;
-#X msg 68 249 46;
 #X msg 448 205 wave 2;
+#X msg 68 249 34;
 #X connect 2 0 26 0;
 #X connect 3 0 4 0;
 #X connect 3 1 4 1;
@@ -50,9 +50,9 @@
 #X connect 16 1 19 0;
 #X connect 16 2 18 0;
 #X connect 16 3 25 0;
-#X connect 16 4 27 0;
-#X connect 16 4 23 0;
 #X connect 16 4 28 0;
+#X connect 16 4 23 0;
+#X connect 16 4 27 0;
 #X connect 16 5 17 0;
 #X connect 16 5 20 0;
 #X connect 18 0 2 2;
@@ -64,5 +64,5 @@
 #X connect 24 0 21 1;
 #X connect 25 0 21 1;
 #X connect 26 0 21 0;
-#X connect 27 0 12 0;
-#X connect 28 0 6 1;
+#X connect 27 0 6 1;
+#X connect 28 0 12 0;
