@@ -13,7 +13,7 @@
 #X obj 247 362 cross-over-out 5000 5000 1 0.5;
 #X msg 31 337 master-vol \$1;
 #X obj 35 290 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 9500 1;
+-1 -1 2500 1;
 #X obj 32 310 / 127;
 #X obj 27 135 loadbang;
 #X obj 27 156 del 2000;
@@ -71,8 +71,8 @@
 #X obj 46 96 jwy-sync-r 3003;
 #X obj 316 2 r jwy-sync-pulse;
 #X obj 419 13 r jwy-sync-bpm;
-#X msg 481 48 write 3;
-#X msg 466 79 read 3;
+#X msg 481 48 write 4;
+#X msg 466 79 read 4;
 #X connect 2 0 22 0;
 #X connect 3 0 4 0;
 #X connect 3 1 4 1;
