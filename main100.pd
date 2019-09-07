@@ -126,7 +126,7 @@
 #X connect 27 0 6 0;
 #X restore 287 349 pd tom;
 #X obj 418 409 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 7600 1;
+-1 -1 2500 1;
 #X obj 403 451 / 127;
 #X msg 403 492 master-vol \$1;
 #X obj 579 446 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
