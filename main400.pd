@@ -13,7 +13,7 @@
 #X obj 247 362 cross-over-out 5000 5000 1 0.5;
 #X msg 31 337 master-vol \$1;
 #X obj 35 290 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 3400 1;
+-1 -1 2500 1;
 #X obj 32 310 / 127;
 #X obj 20 147 loadbang;
 #X obj 20 168 del 2000;
@@ -24,13 +24,13 @@
 #X msg 412 177 loadbang bang;
 #X obj 290 119 seqq ../bs-compose/texts400/texts 3;
 #X msg 407 65 openTxt;
-#X msg 439 150 trans -24;
 #X msg 481 48 write 2;
 #X msg 466 79 read 2;
 #X obj 290 98 count-360 4;
 #X msg 448 205 wave 2;
-#X msg 68 249 34;
-#X connect 2 0 26 0;
+#X msg 439 150 trans -12;
+#X msg 68 249 25;
+#X connect 2 0 25 0;
 #X connect 3 0 4 0;
 #X connect 3 1 4 1;
 #X connect 3 2 4 2;
@@ -49,10 +49,10 @@
 #X connect 15 0 16 0;
 #X connect 16 1 19 0;
 #X connect 16 2 18 0;
-#X connect 16 3 25 0;
+#X connect 16 3 24 0;
 #X connect 16 4 28 0;
-#X connect 16 4 23 0;
 #X connect 16 4 27 0;
+#X connect 16 4 26 0;
 #X connect 16 5 17 0;
 #X connect 16 5 20 0;
 #X connect 18 0 2 2;
@@ -60,9 +60,9 @@
 #X connect 20 0 6 1;
 #X connect 21 0 3 0;
 #X connect 22 0 21 1;
-#X connect 23 0 6 1;
+#X connect 23 0 21 1;
 #X connect 24 0 21 1;
-#X connect 25 0 21 1;
-#X connect 26 0 21 0;
+#X connect 25 0 21 0;
+#X connect 26 0 6 1;
 #X connect 27 0 6 1;
 #X connect 28 0 12 0;
