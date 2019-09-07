@@ -1,4 +1,4 @@
-#N canvas 15 107 969 659 10;
+#N canvas 319 114 969 659 10;
 #X declare -path ../externals/jwy-bibliothek;
 #X declare -path ../jwy-bibliothek;
 #X obj 226 468 *~ 0.7;
@@ -125,8 +125,8 @@
 #X connect 26 0 21 0;
 #X connect 27 0 6 0;
 #X restore 287 349 pd tom;
-#X obj 406 431 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 2500 1;
+#X obj 418 409 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 7600 1;
 #X obj 403 451 / 127;
 #X msg 403 492 master-vol \$1;
 #X obj 579 446 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
@@ -153,13 +153,14 @@
 #X msg 322 68 0;
 #X msg 463 305 25;
 #X msg 334 177 openTxt;
-#X msg 383 275 write 2;
-#X msg 443 237 read 2;
+#X msg 490 255 read 2;
 #X obj 227 221 seqq ../bs-compose/texts100/texts 2;
 #X obj 709 126 jwy-sync-r 3003;
 #X obj 406 27 r jwy-sync-bpm;
 #X obj 296 26 r jwy-sync-pulse;
-#X obj 709 147 route vol;
+#X obj 709 147 route vol seq;
+#X msg 747 195 read \$1;
+#X msg 383 275 write 5;
 #X connect 0 0 13 0;
 #X connect 1 0 0 0;
 #X connect 2 0 0 0;
@@ -173,10 +174,10 @@
 #X connect 10 0 13 1;
 #X connect 11 0 9 0;
 #X connect 12 0 10 0;
-#X connect 14 0 31 0;
+#X connect 14 0 30 0;
 #X connect 17 0 18 0;
 #X connect 18 0 19 0;
-#X connect 19 0 30 0;
+#X connect 19 0 29 0;
 #X connect 19 1 23 0;
 #X connect 19 2 22 0;
 #X connect 19 3 27 0;
@@ -188,11 +189,13 @@
 #X connect 25 1 2 0;
 #X connect 26 0 21 0;
 #X connect 27 0 3 0;
-#X connect 28 0 31 1;
-#X connect 29 0 31 1;
-#X connect 30 0 31 1;
-#X connect 31 0 25 0;
-#X connect 32 0 35 0;
-#X connect 33 0 21 2;
-#X connect 34 0 21 1;
-#X connect 35 0 3 0;
+#X connect 28 0 30 1;
+#X connect 29 0 30 1;
+#X connect 30 0 25 0;
+#X connect 31 0 34 0;
+#X connect 32 0 21 2;
+#X connect 33 0 21 1;
+#X connect 34 0 3 0;
+#X connect 34 1 35 0;
+#X connect 35 0 30 1;
+#X connect 36 0 30 1;

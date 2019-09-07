@@ -13,7 +13,7 @@
 #X obj 247 362 cross-over-out 5000 5000 1 0.5;
 #X msg 31 337 master-vol \$1;
 #X obj 35 290 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 5400 1;
+-1 -1 4700 1;
 #X obj 32 310 / 127;
 #X obj 27 135 loadbang;
 #X obj 27 156 del 2000;
@@ -25,7 +25,7 @@
 #X msg 407 65 openTxt;
 #X obj 290 98 count-360 4;
 #X msg 68 249 25;
-#N canvas 0 23 450 300 control 1;
+#N canvas 0 23 450 300 control 0;
 #X obj 36 13 inlet;
 #X obj 36 34 t b b b b b b;
 #X msg 17 124 loadbang bang;
@@ -68,8 +68,8 @@
 #X obj 316 2 r jwy-sync-pulse;
 #X obj 419 13 r jwy-sync-bpm;
 #X obj 166 188 route vol;
-#X msg 481 48 write 5;
 #X msg 466 79 read 5;
+#X msg 481 48 write 8;
 #X connect 2 0 22 0;
 #X connect 3 0 4 0;
 #X connect 3 1 4 1;
@@ -89,7 +89,7 @@
 #X connect 15 0 16 0;
 #X connect 16 1 19 0;
 #X connect 16 2 18 0;
-#X connect 16 3 31 0;
+#X connect 16 3 30 0;
 #X connect 16 4 23 0;
 #X connect 16 4 24 0;
 #X connect 16 5 17 0;
