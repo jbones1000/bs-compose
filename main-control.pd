@@ -13,14 +13,16 @@
 #X floatatom 131 207 5 0 0 0 - - -;
 #X msg 242 125 vol \$1;
 #X obj 244 98 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 2800 1;
+-1 -1 6700 1;
 #X msg 234 210 vol \$1;
 #X obj 236 183 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 6000 1;
+-1 -1 4300 1;
 #X msg 214 60 seq \$1;
 #X floatatom 229 38 5 0 0 0 - - -;
 #X msg 405 153 seq \$1;
 #X floatatom 420 131 5 0 0 0 - - -;
+#X floatatom 297 35 5 0 0 0 - - -;
+#X msg 297 55 trans \$1;
 #X connect 2 0 1 0;
 #X connect 3 0 4 0;
 #X connect 5 0 1 1;
@@ -36,3 +38,5 @@
 #X connect 13 0 12 0;
 #X connect 14 0 4 3;
 #X connect 15 0 14 0;
+#X connect 16 0 17 0;
+#X connect 17 0 1 3;
