@@ -3,7 +3,7 @@
 #X declare -path ../jwy-bibliothek;
 #X obj 226 468 *~ 0.7;
 #X obj 418 409 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 12700 1;
+-1 -1 2500 1;
 #X obj 403 451 / 127;
 #X msg 403 492 master-vol \$1;
 #X obj 579 446 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
@@ -25,18 +25,22 @@
 #X msg 372 69 1;
 #X msg 322 68 0;
 #X msg 463 305 25;
-#X msg 334 177 openTxt;
+#X msg 402 167 openTxt;
 #X obj 709 126 jwy-sync-r 3003;
 #X obj 406 27 r jwy-sync-bpm;
 #X obj 296 26 r jwy-sync-pulse;
 #X obj 709 147 route vol seq;
 #X msg 747 195 read \$1;
 #X obj 372 120 master-ticks 360;
-#X obj 227 221 seqq 360 ../bs-compose/texts100/texts 2;
-#X obj 226 185 count-ticks 360 4;
-#X obj 217 382 drum-bank;
-#X msg 519 122 write 6;
-#X msg 490 255 read 6;
+#X obj 188 222 seqq 360 ../bs-compose/texts100/texts 2;
+#X obj 188 186 count-ticks 360 4;
+#X obj 188 256 drum-bank;
+#X obj 76 366 catch~ main100-bus;
+#X obj 372 141 s main400-ticks;
+#X obj 187 162 r main400-ticks;
+#X obj 188 277 throw~ main100-bus;
+#X msg 519 122 write 7;
+#X msg 490 255 read 7;
 #X connect 0 0 11 0;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
@@ -50,7 +54,7 @@
 #X connect 10 0 8 0;
 #X connect 14 0 15 0;
 #X connect 15 0 16 0;
-#X connect 16 0 33 0;
+#X connect 16 0 37 0;
 #X connect 16 1 19 0;
 #X connect 16 2 18 0;
 #X connect 16 3 21 0;
@@ -66,9 +70,11 @@
 #X connect 26 0 1 0;
 #X connect 26 1 27 0;
 #X connect 27 0 29 1;
-#X connect 28 0 30 0;
+#X connect 28 0 33 0;
 #X connect 29 0 31 0;
 #X connect 30 0 29 0;
-#X connect 31 0 0 0;
-#X connect 32 0 29 1;
-#X connect 33 0 29 1;
+#X connect 31 0 35 0;
+#X connect 32 0 0 0;
+#X connect 34 0 30 0;
+#X connect 36 0 29 1;
+#X connect 37 0 29 1;
