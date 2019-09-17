@@ -3,7 +3,7 @@
 #X declare -path ../jwy-bibliothek;
 #X obj 226 538 *~ 0.7;
 #X obj 406 496 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 6600 1;
+-1 -1 2500 1;
 #X obj 403 521 / 127;
 #X msg 403 542 master-vol \$1;
 #X obj 226 568 cross-over-out 2500 4000 1 0.5;
@@ -37,8 +37,8 @@
 #X obj 400 110 loadbang;
 #X msg 380 212 read \$1;
 #X floatatom 414 253 5 0 0 0 - - -;
-#X msg 304 155 write 9;
-#X msg 379 181 read 9;
+#X msg 304 155 write 10;
+#X msg 379 181 read 10;
 #X connect 0 0 9 0;
 #X connect 1 0 2 1;
 #X connect 2 0 4 0;
