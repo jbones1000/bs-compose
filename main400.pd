@@ -5,7 +5,7 @@
 #X obj 283 454 cross-over-out 5000 5000 1 0.5;
 #X msg 71 322 master-vol \$1;
 #X obj 75 270 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 5900 1;
+-1 -1 2500 1;
 #X obj 72 295 / 127;
 #X obj 13 107 loadbang;
 #X obj 12 129 del 2000;
@@ -19,7 +19,7 @@
 #X floatatom 699 110 5 0 0 0 - - -;
 #X obj 284 330 catch~ main400-bus;
 #X obj 42 368 s load-on;
-#X obj 534 310 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 534 310 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 430 138 s jwy-sync-bpm;
 #X msg 430 108 120;
@@ -104,7 +104,7 @@
 #X connect 33 0 7 0;
 #X connect 34 0 33 0;
 #X restore 534 336 pd fm-loop-simple;
-#X obj 653 311 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 653 311 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #N canvas 385 148 803 492 fm-loop-fb 0;
 #X obj 79 187 unpack 0 0 0;
@@ -185,13 +185,12 @@
 #X connect 30 0 8 0;
 #X connect 31 0 28 0;
 #X connect 32 0 6 1;
-#X connect 33 0 6 0;
 #X connect 33 0 17 0;
+#X connect 33 0 6 0;
 #X connect 34 0 29 0;
 #X connect 35 0 6 1;
 #X connect 36 0 6 1;
 #X restore 653 336 pd fm-loop-fb;
-#X obj 288 87 r jwy-sync-pulse;
 #X obj 341 112 r jwy-sync-bpm;
 #X obj 248 157 master-ticks 360;
 #X obj 248 178 s main400-ticks;
@@ -214,7 +213,7 @@
 #X connect 8 4 10 0;
 #X connect 8 5 9 0;
 #X connect 10 0 4 0;
-#X connect 11 0 31 0;
+#X connect 11 0 30 0;
 #X connect 12 0 24 1;
 #X connect 12 0 22 1;
 #X connect 14 0 5 0;
@@ -224,20 +223,19 @@
 #X connect 20 0 19 0;
 #X connect 21 0 19 0;
 #X connect 23 0 24 0;
-#X connect 25 0 27 1;
-#X connect 26 0 27 2;
-#X connect 27 0 28 0;
-#X connect 29 0 30 0;
-#X connect 30 0 27 0;
-#X connect 31 0 13 0;
-#X connect 31 1 12 0;
-#X connect 31 2 24 2;
-#X connect 31 2 22 2;
-#X connect 31 3 32 0;
+#X connect 25 0 26 1;
+#X connect 26 0 27 0;
+#X connect 28 0 29 0;
+#X connect 29 0 26 0;
+#X connect 30 0 13 0;
+#X connect 30 1 12 0;
+#X connect 30 2 24 2;
+#X connect 30 2 22 2;
+#X connect 30 3 31 0;
+#X connect 31 0 33 0;
+#X connect 31 1 32 0;
 #X connect 32 0 34 0;
-#X connect 32 1 33 0;
-#X connect 33 0 35 0;
-#X connect 34 0 18 0;
-#X connect 34 1 23 0;
-#X connect 36 0 23 0;
-#X connect 37 0 18 0;
+#X connect 33 0 18 0;
+#X connect 33 1 23 0;
+#X connect 35 0 23 0;
+#X connect 36 0 18 0;
