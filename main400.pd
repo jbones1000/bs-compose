@@ -20,9 +20,9 @@
 #X obj 42 368 s load-on;
 #X obj 534 310 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 430 138 s jwy-sync-bpm;
-#X msg 430 108 120;
-#X floatatom 466 108 5 0 0 0 - - -;
+#X obj 462 189 s jwy-sync-bpm;
+#X msg 462 159 120;
+#X floatatom 498 159 5 0 0 0 - - -;
 #N canvas 0 23 1221 745 fm-loop-simple 0;
 #X obj 79 187 unpack 0 0 0;
 #X obj 79 208 makenote, f 12;
@@ -214,6 +214,7 @@
 #X connect 8 2 22 0;
 #X connect 8 4 37 0;
 #X connect 8 5 9 0;
+#X connect 8 5 19 0;
 #X connect 10 0 29 0;
 #X connect 11 0 23 1;
 #X connect 11 0 21 1;
