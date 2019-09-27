@@ -3,7 +3,7 @@
 #X declare -path ../jwy-bibliothek;
 #X obj 286 486 *~ 0.7;
 #X obj 466 444 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 9500 1;
+-1 -1 2500 1;
 #X obj 463 469 / 127;
 #X msg 463 490 master-vol \$1;
 #X obj 286 516 cross-over-out 2500 4000 1 0.5;
@@ -65,8 +65,7 @@
 #X floatatom 699 167 5 0 0 0 - - -;
 #X obj 29 248 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 27 150 loadbang;
-#X obj 27 171 del 3000;
+#X obj 27 151 del 3000;
 #X obj 27 192 t b b b b b;
 #X obj 32 319 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
@@ -83,6 +82,7 @@
 #X connect 3 0 4 1;
 #X connect 7 0 8 0;
 #X connect 8 0 9 0;
+#X connect 9 0 33 0;
 #X connect 9 1 19 0;
 #X connect 9 3 11 0;
 #X connect 9 4 10 0;
@@ -99,17 +99,15 @@
 #X connect 21 0 22 0;
 #X connect 22 0 16 0;
 #X connect 24 0 15 0;
-#X connect 25 0 31 0;
-#X connect 26 0 27 0;
-#X connect 27 0 28 0;
-#X connect 28 1 34 0;
-#X connect 28 2 33 0;
-#X connect 28 3 32 0;
-#X connect 28 4 31 0;
+#X connect 25 0 30 0;
+#X connect 27 1 33 0;
+#X connect 27 2 32 0;
+#X connect 27 3 31 0;
+#X connect 27 4 30 0;
+#X connect 28 0 31 0;
 #X connect 29 0 32 0;
-#X connect 30 0 33 0;
-#X connect 34 0 35 0;
-#X connect 34 0 22 0;
-#X connect 35 0 31 3;
-#X connect 35 0 33 3;
-#X connect 35 0 32 3;
+#X connect 33 0 34 0;
+#X connect 33 0 22 0;
+#X connect 34 0 30 3;
+#X connect 34 0 32 3;
+#X connect 34 0 31 3;
