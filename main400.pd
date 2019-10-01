@@ -11,7 +11,7 @@
 #X obj 12 129 del 2000;
 #X obj 12 150 t b b b b b b;
 #X msg 87 181 \; pd dsp 1;
-#X obj 593 26 jwy-sync-r 3003;
+#X obj 597 10 jwy-sync-r 3003;
 #X msg 634 82 read \$1;
 #X obj 598 136 s \$0-vol;
 #X obj 111 247 r \$0-vol;
@@ -204,6 +204,7 @@
 #X obj 518 288 r \$0-seloff;
 #X obj 318 66 del 5000;
 #X msg 72 240 10;
+#X obj 710 18 jwy-sync-r 3004;
 #X connect 3 0 2 1;
 #X connect 4 0 5 0;
 #X connect 5 0 3 0;
@@ -243,3 +244,4 @@
 #X connect 35 0 17 0;
 #X connect 36 0 28 0;
 #X connect 37 0 4 0;
+#X connect 38 0 29 0;
