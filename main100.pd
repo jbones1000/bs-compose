@@ -1,9 +1,9 @@
-#N canvas 18 271 969 659 10;
+#N canvas 18 219 969 659 10;
 #X declare -path ../externals/jwy-bibliothek;
 #X declare -path ../jwy-bibliothek;
 #X obj 286 486 *~ 0.7;
 #X obj 466 444 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 3400 1;
+-1 -1 5400 1;
 #X obj 463 469 / 127;
 #X msg 463 490 master-vol \$1;
 #X obj 286 516 cross-over-out 2500 4000 1 0.5;
@@ -37,6 +37,7 @@
 #X floatatom 414 253 5 0 0 0 - - -;
 #X msg 380 181 read 8;
 #X msg 304 155 write 8;
+#X obj 153 116 r jwy-sync-pulse;
 #X connect 0 0 9 0;
 #X connect 1 0 2 1;
 #X connect 2 0 4 0;
@@ -54,6 +55,7 @@
 #X connect 14 0 13 0;
 #X connect 15 0 2 1;
 #X connect 16 0 2 1;
+#X connect 17 0 3 2;
 #X restore 531 234 pd steady-drum-beat;
 #X obj 531 205 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
