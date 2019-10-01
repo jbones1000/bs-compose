@@ -1,4 +1,4 @@
-#N canvas 124 432 969 659 10;
+#N canvas 18 271 969 659 10;
 #X declare -path ../externals/jwy-bibliothek;
 #X declare -path ../jwy-bibliothek;
 #X obj 286 486 *~ 0.7;
@@ -65,10 +65,12 @@
 -1;
 #X msg 206 255 start bang;
 #X obj 391 335 del 10000;
-#X msg 456 96 100;
+#X msg 230 60 100;
 #X msg 463 304 34;
 #X obj 291 339 del 3000;
 #X obj 30 284 jwy-sync-s razi-400.local 3004;
+#X obj 391 356 del 5000;
+#X msg 391 377 0;
 #X connect 0 0 4 0;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
@@ -96,6 +98,10 @@
 #X connect 24 0 29 3;
 #X connect 25 0 20 0;
 #X connect 25 0 24 0;
+#X connect 25 0 30 0;
 #X connect 26 0 15 1;
+#X connect 26 0 29 1;
 #X connect 27 0 1 0;
 #X connect 28 0 23 0;
+#X connect 30 0 31 0;
+#X connect 31 0 29 2;
