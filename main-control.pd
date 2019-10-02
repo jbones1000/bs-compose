@@ -1,4 +1,4 @@
-#N canvas 66 106 862 576 10;
+#N canvas 491 51 862 576 10;
 #X declare -path ../jwy-bibliothek;
 #X obj 36 14 declare -path ../jwy-bibliothek;
 #X obj 487 167 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -37,6 +37,20 @@
 #X obj 221 435 route 1 2;
 #X obj 77 198 jwy-sync-s razi-100.local 3003;
 #X obj 486 203 jwy-sync-s razi-400.local 3003;
+#X obj 72 482 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X floatatom 151 484 5 0 0 0 - - -;
+#X msg 236 486 vol \$1;
+#X obj 244 463 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 1300 1;
+#X obj 72 518 jwy-sync-s razi-200.local 3003;
+#X obj 459 478 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 538 480 5 0 0 0 - - -;
+#X msg 623 482 vol \$1;
+#X obj 631 459 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 4700 1;
+#X obj 459 514 jwy-sync-s razi-300.local 3003;
 #X connect 1 0 31 0;
 #X connect 2 0 30 0;
 #X connect 3 0 4 0;
@@ -72,3 +86,11 @@
 #X connect 28 0 29 0;
 #X connect 29 0 8 0;
 #X connect 29 1 6 0;
+#X connect 32 0 36 0;
+#X connect 33 0 36 1;
+#X connect 34 0 36 3;
+#X connect 35 0 34 0;
+#X connect 37 0 41 0;
+#X connect 38 0 41 1;
+#X connect 39 0 41 3;
+#X connect 40 0 39 0;
