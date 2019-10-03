@@ -95,7 +95,7 @@ to be safe;
 #X msg 643 217 1;
 #X text 80 150 this is the last receiver install;
 #X obj 263 456 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 10900 1;
+-1 -1 0 1;
 #X msg 446 101 120;
 #N canvas 260 111 948 660 fmloop-1 0;
 #X obj 209 175 count-ticks 360 4;
