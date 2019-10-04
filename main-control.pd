@@ -9,10 +9,10 @@
 #X floatatom 156 164 5 0 0 0 - - -;
 #X msg 694 173 vol \$1;
 #X obj 696 146 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 800 1;
+-1 -1 4700 1;
 #X msg 241 166 vol \$1;
 #X obj 249 143 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 1900 1;
+-1 -1 4100 1;
 #X msg 640 98 seq \$1;
 #X floatatom 655 76 5 0 0 0 - - -;
 #X msg 160 95 seq \$1;
