@@ -5,7 +5,7 @@
 #X declare -path ../jwy-bibliothek;
 #X obj 286 556 *~ 0.7;
 #X obj 466 514 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 3400 1;
+-1 -1 0 1;
 #X obj 463 539 / 127;
 #X msg 463 560 master-vol \$1;
 #X obj 25 16 declare -path ../jwy-bibliothek;
@@ -358,7 +358,7 @@ to be safe;
 #X obj 323 138 % 24;
 #X obj 624 89 t a a b b b, f 22;
 #X obj 209 436 fm/fm-main presets/simple2 4;
-#X obj 323 159 + 12;
+#X obj 323 159 + 0;
 #X connect 0 0 4 0;
 #X connect 1 0 4 0;
 #X connect 2 0 36 1;
