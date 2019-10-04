@@ -248,7 +248,7 @@ to be safe;
 #X obj 331 14 r local-start;
 #X obj 41 355 s local-start;
 #X obj 517 162 sel 8 22 24, f 26;
-#N canvas 492 81 948 660 fmFEEDBACK 1;
+#N canvas 492 81 948 660 fmFEEDBACK 0;
 #X msg 373 377 p-1 \$1;
 #X obj 553 433 inlet switch;
 #X obj 209 525 *~, f 35;
