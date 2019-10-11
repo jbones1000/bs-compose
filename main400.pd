@@ -1,4 +1,4 @@
-#N canvas 261 86 927 643 10;
+#N canvas 365 361 927 643 10;
 #X declare -path ../jwy-bibliothek;
 #X declare -path ../jwy-bibliothek;
 #X declare -path ../jwy-bibliothek;
@@ -32,19 +32,21 @@
 #X msg 558 169 \; pd dsp 1;
 #X text 206 78 delay 2 seconds after bash script runs this \, just
 to be safe;
-#X obj 331 189 s local-init;
+#X obj 331 169 s local-init;
 #X obj 186 165 del 10000;
-#X obj 364 263 r send-2-100;
-#X obj 214 215 s start-fb;
-#X obj 187 317 jwy-sync-s razi-100.local 3011;
+#X obj 390 226 r send-2-100;
+#X obj 116 287 s start-fb;
+#X obj 213 280 jwy-sync-s razi-100.local 3011;
+#X obj 186 186 t b b;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 2 1 6 0;
 #X connect 2 2 5 0;
 #X connect 2 4 3 0;
-#X connect 6 0 8 0;
-#X connect 6 0 9 0;
+#X connect 6 0 10 0;
 #X connect 7 0 9 3;
+#X connect 10 0 8 0;
+#X connect 10 1 9 0;
 #X restore 31 99 pd init;
 #X obj 135 301 s master-vol;
 #X obj 41 217 r local-init;
