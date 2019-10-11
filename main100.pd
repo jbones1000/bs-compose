@@ -318,7 +318,7 @@ to be safe;
 #X connect 28 0 20 0;
 #X connect 30 0 23 1;
 #X restore 615 334 pd fmloop-2;
-#N canvas 492 78 948 660 fmFEEDBACK 0;
+#N canvas 201 83 948 660 fmFEEDBACK 1;
 #X msg 373 387 p-1 \$1;
 #X obj 553 433 inlet switch;
 #X obj 209 525 *~, f 35;
