@@ -25,9 +25,9 @@
 #X msg 394 180 write \$1;
 #X obj 393 130 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 58 245 seqq 360 ../bs-compose/texts/\$2 1;
 #X obj 221 145 f \$2;
 #X obj 395 157 f \$2;
+#X obj 58 245 seqq 360 ../bs-compose/texts/\$1 1;
 #X connect 0 0 3 0;
 #X connect 1 0 14 0;
 #X connect 3 0 1 1;
@@ -36,12 +36,12 @@
 #X connect 4 1 2 0;
 #X connect 6 0 7 0;
 #X connect 7 0 1 0;
-#X connect 8 0 24 0;
-#X connect 9 0 24 1;
+#X connect 8 0 26 0;
+#X connect 9 0 26 1;
 #X connect 10 0 8 3;
 #X connect 10 1 11 0;
-#X connect 11 0 25 0;
-#X connect 12 0 24 1;
+#X connect 11 0 24 0;
+#X connect 12 0 26 1;
 #X connect 13 0 8 0;
 #X connect 15 0 16 1;
 #X connect 16 0 15 0;
@@ -51,9 +51,9 @@
 #X connect 19 0 6 0;
 #X connect 20 0 19 0;
 #X connect 20 1 16 0;
-#X connect 21 0 24 1;
-#X connect 22 0 24 1;
-#X connect 23 0 26 0;
-#X connect 24 0 20 0;
-#X connect 25 0 21 0;
-#X connect 26 0 22 0;
+#X connect 21 0 26 1;
+#X connect 22 0 26 1;
+#X connect 23 0 25 0;
+#X connect 24 0 21 0;
+#X connect 25 0 22 0;
+#X connect 26 0 20 0;

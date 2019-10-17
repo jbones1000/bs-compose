@@ -101,7 +101,7 @@ composition;
 #X connect 11 5 12 0;
 #X connect 11 6 4 0;
 #X restore 374 17 pd incoming-messages;
-#N canvas 128 43 1117 835 the-movements 1;
+#N canvas 128 43 1117 835 the-movements 0;
 #X msg 37 97 1;
 #X msg 133 113 0;
 #X obj 37 76 r local-init;
