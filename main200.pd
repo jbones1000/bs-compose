@@ -77,7 +77,7 @@ composition;
 #X connect 1 0 2 0;
 #X connect 2 0 0 0;
 #X restore 15 78 pd init-options;
-#N canvas 0 23 343 252 local-metro 0;
+#N canvas 0 23 343 252 local-metro 1;
 #X obj 77 175 master-ticks 360;
 #X floatatom 207 143 5 0 0 0 - - -;
 #X obj 77 196 s main-ticks;

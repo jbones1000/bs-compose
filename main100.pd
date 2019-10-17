@@ -22,7 +22,7 @@
 composition;
 #X obj 11 56 loadbang;
 #X msg 200 127 \; pd dsp 1;
-#N canvas 621 29 450 486 connect 0;
+#N canvas 686 178 450 486 connect 0;
 #X obj 21 15 inlet;
 #X obj 21 56 t b b b, f 11;
 #X obj 198 384 r local-2-400;
