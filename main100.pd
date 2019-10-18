@@ -17,12 +17,12 @@
 #X connect 5 0 1 0;
 #X connect 6 0 0 0;
 #X restore 26 300 pd output~;
-#N canvas 138 255 517 492 init 0;
+#N canvas 138 255 517 492 init 1;
 #X text 5 6 This is the master computer when the 4 are doing the installation
 composition;
 #X obj 11 36 loadbang;
 #X msg 200 107 \; pd dsp 1;
-#N canvas 686 178 450 486 connect 0;
+#N canvas 686 178 450 486 connect 1;
 #X obj 21 15 inlet;
 #X obj 21 56 t b b b, f 11;
 #X obj 198 384 r local-2-400;
