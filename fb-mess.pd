@@ -1,0 +1,16 @@
+#N canvas 463 211 450 300 10;
+#X obj 66 20 inlet;
+#X obj 66 62 route \$1;
+#X obj 109 108 route \$1;
+#X obj 66 83 s local-fB-1;
+#X obj 109 129 s local-fB-2;
+#X obj 149 68 route \$1;
+#X obj 149 89 s local-fB-3;
+#X obj 66 41 route fb-1 fb-2 fB-3;
+#X connect 0 0 7 0;
+#X connect 1 0 3 0;
+#X connect 2 0 4 0;
+#X connect 5 0 6 0;
+#X connect 7 0 1 0;
+#X connect 7 1 2 0;
+#X connect 7 2 5 0;
