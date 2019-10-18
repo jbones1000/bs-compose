@@ -1,4 +1,4 @@
-#N canvas 104 388 535 341 10;
+#N canvas 78 398 535 341 10;
 #X declare -path ../jwy-bibliothek;
 #X declare -path ../jwy-bibliothek;
 #X declare -path ../jwy-bibliothek;
@@ -254,7 +254,7 @@ composition;
 #X connect 14 6 15 0;
 #X connect 19 0 0 0;
 #X restore 205 134 pd the-movements;
-#N canvas 744 250 474 401 incoming-messages 1;
+#N canvas 744 250 474 401 incoming-messages 0;
 #X obj 43 13 jwy-sync-r 3011;
 #X obj 65 43 jwy-sync-r 3013;
 #X text 139 13 'the peers' the other computers;
