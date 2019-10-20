@@ -101,7 +101,7 @@ composition;
 #X msg 20 154 120;
 #X msg 47 201 bpm \$1;
 #X obj 20 130 t b;
-#X msg 20 46 0;
+#X msg 20 46 45;
 #X connect 1 0 4 0;
 #X connect 1 1 7 0;
 #X connect 2 0 9 0;
