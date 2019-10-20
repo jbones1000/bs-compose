@@ -23,7 +23,7 @@
 #X obj 407 290 - 12;
 #X msg 107 227 50 100 \$1 \, 54 100 \$1 \, 59 100 \$1 \, 64 100 \$1
 ;
-#X obj 111 55 r local-fB-1;
+#X obj 111 25 r local-fB-1;
 #X obj 571 213 delay;
 #X obj 571 94 t b b b;
 #X msg 689 177 stop;
@@ -45,6 +45,7 @@
 #X obj 573 329 + 1;
 #X obj 573 430 s local-2-all;
 #X obj 573 409 list prepend fB-1;
+#X obj 693 40 inlet start;
 #X connect 0 0 7 1;
 #X connect 1 0 4 0;
 #X connect 2 0 19 0;
@@ -99,3 +100,4 @@
 #X connect 40 0 41 0;
 #X connect 41 0 39 0;
 #X connect 43 0 42 0;
+#X connect 44 0 32 0;

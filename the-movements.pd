@@ -14,13 +14,15 @@
 #X obj 287 97 r master-count;
 #X obj 431 96 r master-count;
 #X obj 567 97 r master-count;
-#X obj 721 96 r master-count;
+#X obj 698 75 r master-count;
 #X obj 287 130 chunk-switch 15 20;
 #X obj 567 130 chunk-switch 35 40;
-#X obj 851 96 r master-count;
-#X obj 721 130 chunk-switch 45 55;
-#X obj 851 130 chunk-switch 50 60;
+#X obj 851 68 r master-count;
+#X obj 721 180 chunk-switch 45 55;
+#X obj 851 180 chunk-switch 50 60;
 #X obj 431 130 chunk-switch 25 30;
+#X obj 541 21 inlet start-fb-1;
+#X obj 720 21 inlet start-fb-2;
 #X connect 0 0 9 0;
 #X connect 9 0 2 0;
 #X connect 10 0 3 0;
@@ -35,3 +37,5 @@
 #X connect 19 0 4 0;
 #X connect 20 0 5 0;
 #X connect 21 0 7 0;
+#X connect 22 0 4 1;
+#X connect 23 0 5 1;

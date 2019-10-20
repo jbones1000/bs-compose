@@ -29,6 +29,7 @@
 #X obj 111 160 % 6;
 #X obj 111 202 pack 0 0;
 #X obj 573 409 list prepend fB-2;
+#X obj 752 53 inlet;
 #X connect 0 0 3 0;
 #X connect 1 0 6 0;
 #X connect 3 0 1 1;
@@ -61,3 +62,4 @@
 #X connect 26 0 25 1;
 #X connect 27 0 18 0;
 #X connect 28 0 17 0;
+#X connect 29 0 12 0;
