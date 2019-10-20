@@ -42,14 +42,14 @@
 #N canvas 532 237 450 300 init-options 0;
 #X obj 20 70 s master-vol;
 #X obj 20 20 r local-init;
-#X msg 20 46 32;
 #X obj 120 24 r local-init;
 #X msg 120 45 1;
 #X obj 120 66 s metro-start;
-#X connect 1 0 2 0;
-#X connect 2 0 0 0;
+#X msg 20 46 0;
+#X connect 1 0 5 0;
+#X connect 2 0 3 0;
 #X connect 3 0 4 0;
-#X connect 4 0 5 0;
+#X connect 5 0 0 0;
 #X restore 15 78 pd init-options;
 #N canvas 0 23 343 252 local-metro 0;
 #X obj 77 175 master-ticks 360;

@@ -1,53 +1,55 @@
 #N canvas 135 91 862 576 10;
 #X declare -path ../jwy-bibliothek;
 #X obj 36 14 declare -path ../jwy-bibliothek;
-#X obj 487 167 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 77 162 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
-#X msg 694 173 vol \$1;
-#X obj 696 146 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 6200 1;
-#X msg 241 166 vol \$1;
-#X obj 249 143 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+#X msg 663 170 vol \$1;
+#X obj 666 144 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
-#X obj 72 482 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
+#X msg 223 217 vol \$1;
+#X obj 226 193 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
 #X msg 236 486 vol \$1;
 #X obj 244 463 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 6500 1;
-#X obj 459 478 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X msg 623 482 vol \$1;
-#X obj 631 459 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 6700 1;
-#X obj 77 198 jwy-sync-s razi-100.local 3013;
+-1 -1 0 1;
+#X msg 643 470 vol \$1;
+#X obj 646 447 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 46 259 jwy-sync-s razi-100.local 3013;
 #X obj 486 203 jwy-sync-s razi-400.local 3013;
-#X obj 459 514 jwy-sync-s razi-300.local 3013;
-#X obj 72 518 jwy-sync-s razi-200.local 3013;
-#X msg 373 181 pulse bang;
-#X msg 494 92 bpm \$1;
-#X floatatom 494 62 5 0 0 0 - - -;
-#X msg 232 90 reKon bang;
-#X connect 1 0 14 0;
-#X connect 2 0 13 0;
-#X connect 3 0 14 1;
+#X obj 458 509 jwy-sync-s razi-300.local 3013;
+#X obj 71 513 jwy-sync-s razi-200.local 3013;
+#X msg 446 53 pulse bang;
+#X msg 100 95 bpm \$1;
+#X floatatom 100 65 5 0 0 0 - - -;
+#X obj 24 97 s conneKt;
+#X obj 24 71 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 46 233 r conneKt;
+#X obj 486 174 r conneKt;
+#X obj 71 477 r conneKt;
+#X obj 465 474 r conneKt;
+#X obj 100 119 s 2-all;
+#X obj 155 200 r 2-all;
+#X obj 700 229 r 2-all;
+#X obj 197 439 r 2-all;
+#X obj 615 411 r 2-all;
+#X obj 446 74 s 2-all;
+#X connect 1 0 10 1;
+#X connect 2 0 1 0;
+#X connect 3 0 9 1;
 #X connect 4 0 3 0;
-#X connect 5 0 13 1;
+#X connect 5 0 12 1;
 #X connect 6 0 5 0;
-#X connect 7 0 16 0;
-#X connect 8 0 16 1;
-#X connect 9 0 8 0;
-#X connect 10 0 15 0;
-#X connect 11 0 15 1;
-#X connect 12 0 11 0;
-#X connect 17 0 13 1;
-#X connect 17 0 14 1;
-#X connect 17 0 15 1;
-#X connect 17 0 16 1;
-#X connect 18 0 14 1;
-#X connect 18 0 15 1;
-#X connect 18 0 16 1;
-#X connect 18 0 13 1;
-#X connect 19 0 18 0;
-#X connect 20 0 13 1;
+#X connect 7 0 11 1;
+#X connect 8 0 7 0;
+#X connect 13 0 27 0;
+#X connect 14 0 22 0;
+#X connect 15 0 14 0;
+#X connect 17 0 16 0;
+#X connect 18 0 9 0;
+#X connect 19 0 10 0;
+#X connect 20 0 12 0;
+#X connect 21 0 11 0;
+#X connect 23 0 9 1;
+#X connect 24 0 10 1;
+#X connect 25 0 12 1;
+#X connect 26 0 11 1;
