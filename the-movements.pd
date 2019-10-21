@@ -23,7 +23,7 @@
 #X obj 567 130 chunk-switch 30 40;
 #X obj 721 230 fB-1 \$1 simple1;
 #X obj 481 263 drum-spin kSpin \$12;
-#X obj 852 223 fb-2 \$1;
+#X obj 852 223 fB-2 \$1;
 #X connect 0 0 7 0;
 #X connect 7 0 2 0;
 #X connect 8 0 3 0;
