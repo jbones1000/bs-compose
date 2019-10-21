@@ -24,10 +24,12 @@
 #X obj 221 145 f \$2;
 #X obj 395 157 f \$2;
 #X obj 58 245 seqq 360 ../bs-compose/texts/\$1 1;
-#X obj 105 367 random 126;
-#X obj 105 388 + 1;
 #X obj 267 81 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
+#X obj 102 333 f;
+#X obj 133 334 + 3;
+#X obj 102 354 % 126;
+#X obj 102 375 + 1;
 #X connect 0 0 3 0;
 #X connect 1 0 14 0;
 #X connect 3 0 1 1;
@@ -45,13 +47,16 @@
 #X connect 13 0 8 0;
 #X connect 15 0 6 0;
 #X connect 16 0 15 0;
-#X connect 16 1 23 0;
+#X connect 16 1 24 0;
 #X connect 17 0 22 1;
 #X connect 18 0 22 1;
 #X connect 19 0 21 0;
 #X connect 20 0 17 0;
 #X connect 21 0 18 0;
 #X connect 22 0 16 0;
-#X connect 23 0 24 0;
-#X connect 24 0 15 1;
-#X connect 25 0 20 0;
+#X connect 23 0 20 0;
+#X connect 24 0 25 0;
+#X connect 24 0 26 0;
+#X connect 25 0 24 1;
+#X connect 26 0 27 0;
+#X connect 27 0 15 1;
