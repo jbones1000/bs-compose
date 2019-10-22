@@ -56,8 +56,8 @@
 #X msg 463 309 6;
 #X msg 497 309 11;
 #X obj 274 327 pow 2;
-#X obj 106 477 *~ 0.4;
-#X obj 241 473 *~ 0.4;
+#X obj 241 473 *~ 0.24;
+#X obj 106 477 *~ 0.24;
 #X connect 0 0 39 1;
 #X connect 1 0 4 0;
 #X connect 2 0 30 0;
@@ -104,8 +104,8 @@
 #X connect 36 0 34 0;
 #X connect 37 0 33 0;
 #X connect 38 0 32 1;
-#X connect 39 0 54 0;
-#X connect 39 1 55 0;
+#X connect 39 0 55 0;
+#X connect 39 1 54 0;
 #X connect 40 0 9 0;
 #X connect 40 1 48 0;
 #X connect 41 0 42 0;
