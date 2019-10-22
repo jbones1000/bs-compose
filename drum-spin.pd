@@ -31,7 +31,7 @@
 #X obj 100 333 / 127;
 #X obj 100 375 * 127;
 #X obj 100 396 i;
-#X obj 100 354 pow 2;
+#X obj 100 354 pow 8;
 #X connect 0 0 3 0;
 #X connect 1 0 14 0;
 #X connect 3 0 1 1;
