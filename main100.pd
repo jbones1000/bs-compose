@@ -215,7 +215,7 @@ composition;
 #X obj 213 187 r master-count;
 #X obj 218 41 r master-count;
 #X msg 218 83 200 2 2;
-#X obj 217 122 the-movements 1;
+#X obj 217 120 the-movements 1;
 #X obj 218 62 sel 45 50, f 16;
 #X msg 304 86 3 3;
 #X connect 6 0 1 0;
