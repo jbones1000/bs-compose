@@ -1,4 +1,4 @@
-#N canvas 432 114 812 654 10;
+#N canvas 13 85 812 654 10;
 #X declare -path ../jwy-bibliothek;
 #X msg 272 360 p-1 \$1;
 #X obj 340 422 inlet switch;
