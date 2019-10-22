@@ -1,4 +1,4 @@
-#N canvas 364 118 862 576 10;
+#N canvas 364 114 862 576 10;
 #X declare -path ../jwy-bibliothek;
 #X obj 36 14 declare -path ../jwy-bibliothek;
 #X msg 663 170 vol \$1;
