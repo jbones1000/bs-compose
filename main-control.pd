@@ -1,11 +1,11 @@
-#N canvas 80 40 1066 713 10;
+#N canvas 156 69 1066 713 10;
 #X declare -path ../jwy-bibliothek;
-#X obj 90 621 declare -path ../jwy-bibliothek;
-#X msg 288 686 pulse bang;
-#X obj 78 704 s conneKt;
-#X obj 78 678 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X obj 85 540 declare -path ../jwy-bibliothek;
+#X msg 283 605 pulse bang;
+#X obj 73 623 s conneKt;
+#X obj 73 597 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 288 707 s 2-all;
+#X obj 283 626 s 2-all;
 #N canvas 0 23 450 300 cc-in 0;
 #X obj 82 44 ctlin, f 19;
 #X obj 82 235 s cC-kontrol;
@@ -25,19 +25,23 @@
 #X connect 6 0 1 0;
 #X connect 6 1 3 0;
 #X connect 6 2 7 0;
-#X restore 121 645 pd cc-in;
-#X obj 61 656 loadbang;
-#X obj 288 620 r cC-kontrol-glob;
-#X obj 288 641 route 11;
-#X obj 288 662 sel 127;
-#X obj 400 620 route man-control pattern instrument temp0;
-#X msg 393 682 bpm \$1;
-#X floatatom 393 652 5 0 0 0 - - -;
-#X obj 393 706 s 2-all;
-#X floatatom 453 652 5 0 0 0 - - -;
-#X obj 453 706 s 2-all;
-#X msg 453 682 man-count \$1;
+#X restore 116 564 pd cc-in;
+#X obj 56 575 loadbang;
+#X obj 283 539 r cC-kontrol-glob;
+#X obj 283 560 route 11;
+#X obj 283 581 sel 127;
+#X obj 395 539 route man-control pattern instrument temp0;
+#X msg 388 601 bpm \$1;
+#X floatatom 388 571 5 0 0 0 - - -;
+#X obj 388 625 s 2-all;
+#X floatatom 448 571 5 0 0 0 - - -;
+#X obj 448 625 s 2-all;
+#X msg 448 601 man-count \$1;
 #X obj 22 15 heads-up-manual;
+#X obj 556 171 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 556 242 s 2-all;
+#X msg 556 214 man-control bang;
 #X connect 1 0 4 0;
 #X connect 3 0 2 0;
 #X connect 6 0 2 0;
@@ -48,3 +52,5 @@
 #X connect 12 0 11 0;
 #X connect 14 0 16 0;
 #X connect 16 0 15 0;
+#X connect 18 0 20 0;
+#X connect 20 0 19 0;
