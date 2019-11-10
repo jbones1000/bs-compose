@@ -120,7 +120,7 @@ composition;
 #X connect 4 0 0 2;
 #X connect 5 0 0 2;
 #X restore 17 113 pd local-metro;
-#N canvas 327 217 363 262 main-count 1;
+#N canvas 327 217 363 262 main-count 0;
 #X obj 69 104 + 1;
 #X msg 36 48 1;
 #X obj 36 104 f 0;
