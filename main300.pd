@@ -8,7 +8,7 @@
 #X obj 249 67 inlet;
 #X obj 226 41 r master-vol;
 #X obj 49 80 catch~ main-bus;
-#X obj 49 111 *~ 0.8;
+#X obj 49 111 *~ 0.95;
 #X connect 0 0 1 0;
 #X connect 1 0 2 1;
 #X connect 3 0 0 0;
@@ -60,7 +60,7 @@
 #X obj 120 24 r local-init;
 #X msg 120 45 1;
 #X obj 120 66 s metro-start;
-#X msg 20 46 45;
+#X msg 20 46 30;
 #X connect 1 0 5 0;
 #X connect 2 0 3 0;
 #X connect 3 0 4 0;
