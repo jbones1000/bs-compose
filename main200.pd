@@ -1,4 +1,4 @@
-#N canvas 656 23 544 342 10;
+#N canvas 647 23 544 342 10;
 #X declare -path ../jwy-bibliothek;
 #X obj 15 15 declare -path ../jwy-bibliothek;
 #N canvas 0 23 420 233 output~ 0;
@@ -53,15 +53,15 @@
 #X restore 15 78 pd init-options;
 #N canvas 0 23 343 252 local-metro 0;
 #X obj 77 175 master-ticks 360;
-#X floatatom 207 143 5 0 0 0 - - -;
 #X obj 77 196 s main-ticks;
 #X obj 77 21 r metro-start;
 #X obj 123 71 r metro-pulse;
 #X obj 170 114 r metro-bpm;
-#X connect 0 0 2 0;
-#X connect 1 0 0 2;
-#X connect 3 0 0 0;
-#X connect 4 0 0 1;
+#X obj 192 143 r local-tempo;
+#X connect 0 0 1 0;
+#X connect 2 0 0 0;
+#X connect 3 0 0 1;
+#X connect 4 0 0 2;
 #X connect 5 0 0 2;
 #X restore 15 112 pd local-metro;
 #X obj 22 232 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
@@ -127,5 +127,7 @@ composition;
 #X restore 13 46 pd init-200;
 #X obj 374 41 fb-mess 2;
 #X obj 219 96 the-movements 2;
+#X obj 374 62 manual-mess 2;
 #X connect 2 0 7 0;
 #X connect 5 0 1 0;
+#X connect 7 0 9 0;
