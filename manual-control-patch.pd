@@ -1,4 +1,4 @@
-#N canvas 178 84 938 681 10;
+#N canvas 455 267 938 681 10;
 #X declare -path ../jwy-bibliothek;
 #X declare -path ../jwy-bibliothek;
 #X declare -path ../jwy-bibliothek;
@@ -47,7 +47,7 @@
 #X obj 489 410 / 4;
 #X obj 113 469 delread~ yoo 151.515;
 #X obj 267 537 switch-control 1000 1000;
-#X obj 185 407 *~ 0.456;
+#X obj 185 407 *~ 0.78;
 #X connect 0 0 39 0;
 #X connect 1 0 17 0;
 #X connect 3 0 9 0;
