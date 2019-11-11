@@ -1,10 +1,10 @@
-#N canvas 71 74 1066 683 10;
+#N canvas 124 98 1066 683 10;
 #X declare -path ../jwy-bibliothek;
 #X obj 85 540 declare -path ../jwy-bibliothek;
 #X msg 283 605 pulse bang;
-#X obj 562 310 s conneKt;
-#X obj 562 284 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X obj 555 53 s conneKt;
+#X obj 555 27 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
 #X obj 283 626 s 2-all;
 #N canvas 0 23 450 300 cc-in 0;
 #X obj 82 44 ctlin, f 19;
@@ -41,7 +41,7 @@
 #X obj 556 242 s 2-all;
 #X msg 556 214 man-control bang;
 #X obj 395 539 route man-control pattern voice temp0 param1;
-#X text 647 60 start timer;
+#X text 574 315 start timer;
 #N canvas 0 23 450 300 timer-30 0;
 #X obj 57 27 inlet;
 #X obj 57 157 f;
@@ -62,10 +62,10 @@
 #X connect 5 0 1 0;
 #X connect 7 0 1 0;
 #X connect 8 0 6 0;
-#X restore 630 86 pd timer-30;
-#X obj 630 60 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X restore 557 341 pd timer-30;
+#X obj 557 315 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X floatatom 630 107 5 0 0 0 - - -;
+#X floatatom 557 362 5 0 0 0 - - -;
 #X connect 1 0 4 0;
 #X connect 3 0 2 0;
 #X connect 6 0 7 0;
