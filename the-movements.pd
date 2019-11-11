@@ -1,4 +1,4 @@
-#N canvas 182 179 1130 699 10;
+#N canvas 203 138 1130 699 10;
 #X obj 17 97 r master-count;
 #X text 43 13 the Movements 100;
 #X obj 17 240 drum-spin nSpin \$1;

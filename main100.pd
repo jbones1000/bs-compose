@@ -107,7 +107,7 @@ composition;
 #X connect 8 0 6 0;
 #X connect 9 0 0 0;
 #X restore 17 79 pd init-options;
-#N canvas 0 23 343 252 local-metro 0;
+#N canvas 0 23 343 252 local-metro 1;
 #X obj 77 175 master-ticks 360;
 #X obj 77 196 s main-ticks;
 #X obj 77 21 r metro-start;
