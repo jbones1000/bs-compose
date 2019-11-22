@@ -1,22 +1,22 @@
 #N canvas 42 31 1340 754 10;
 #X obj 106 228 nbx 5 35 -1e+37 1e+37 0 0 empty empty 1-pattern 0 -8
-0 10 -261234 -1 -1 4 256;
+0 10 -261234 -1 -1 0 256;
 #X obj 225 228 nbx 5 35 -1e+37 1e+37 0 0 empty empty 2-pattern 0 -8
-0 10 -204800 -1 -1 13 256;
+0 10 -204800 -1 -1 0 256;
 #X obj 345 227 nbx 5 35 -1e+37 1e+37 0 0 empty empty 3-pattern 0 -8
-0 10 -261682 -1 -1 2 256;
+0 10 -261682 -1 -1 0 256;
 #X obj 477 227 nbx 5 35 -1e+37 1e+37 0 0 empty empty 4-pattern 0 -8
-0 10 -204786 -1 -1 7 256;
+0 10 -204786 -1 -1 0 256;
 #X obj 106 198 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 4 256;
+-262144 -1 -1 0 256;
 #X obj 109 105 vsl 25 64 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 3800 1;
 #X obj 235 106 vsl 25 64 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 3800 1;
 #X obj 352 107 vsl 25 64 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 3800 1;
 #X obj 478 106 vsl 25 64 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 3800 1;
 #X msg 805 103 vol \$1;
 #X obj 628 259 jwy-sync-s razi-100.local 3013;
 #X obj 986 639 jwy-sync-s razi-400.local 3013;
@@ -31,11 +31,11 @@
 #X obj 1125 183 r 2-all;
 #X obj 778 540 r 2-all;
 #X obj 226 199 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 11 256;
+-262144 -1 -1 0 256;
 #X obj 345 199 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 2 256;
+-262144 -1 -1 0 256;
 #X obj 476 199 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 7 256;
+-262144 -1 -1 0 256;
 #X obj 106 268 s \$0-1-patt;
 #X obj 226 268 s \$0-2-patt;
 #X obj 346 268 s \$0-3-patt;
@@ -47,21 +47,21 @@
 #X obj 805 83 r \$0-1-vol;
 #X msg 1163 477 vol \$1;
 #X obj 106 307 nbx 5 35 -1e+37 1e+37 0 0 empty empty 1-voice 0 -8 0
-10 -261234 -1 -1 1 256;
+10 -261234 -1 -1 0 256;
 #X obj 225 307 nbx 5 35 -1e+37 1e+37 0 0 empty empty 2-voice 0 -8 0
-10 -204800 -1 -1 1 256;
+10 -204800 -1 -1 0 256;
 #X obj 345 306 nbx 5 35 -1e+37 1e+37 0 0 empty empty 3-voice 0 -8 0
-10 -261682 -1 -1 4 256;
+10 -261682 -1 -1 0 256;
 #X obj 477 306 nbx 5 35 -1e+37 1e+37 0 0 empty empty 4-voice 0 -8 0
-10 -204786 -1 -1 1 256;
+10 -204786 -1 -1 0 256;
 #X obj 107 279 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 1 256;
+-262144 -1 -1 0 256;
 #X obj 227 280 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 1 256;
+-262144 -1 -1 0 256;
 #X obj 346 280 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 3 256;
+-262144 -1 -1 0 256;
 #X obj 477 280 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 1 256;
+-262144 -1 -1 0 256;
 #X obj 108 347 s \$0-1-voice;
 #X obj 226 347 s \$0-2-voice;
 #X obj 345 348 s \$0-3-voice;
@@ -398,7 +398,7 @@
 #X obj 347 369 vsl 25 64 0 127 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 0 1;
 #X obj 473 368 vsl 25 64 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 50 1;
+-1 -1 0 1;
 #N canvas 138 129 1031 543 volume-stuff 0;
 #X obj 145 50 r cC-kontrol;
 #X obj 28 49 r cC-kontrol-clck;
@@ -586,6 +586,9 @@
 #X connect 10 0 11 0;
 #X connect 11 0 9 0;
 #X restore 289 446 pd stag-stuff;
+#X floatatom 580 29 5 0 0 0 - - -;
+#X obj 643 17 vsl 25 64 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 3800 1;
 #X connect 0 0 25 0;
 #X connect 1 0 26 0;
 #X connect 2 0 27 0;
@@ -692,4 +695,8 @@
 #X connect 116 1 109 0;
 #X connect 116 2 110 0;
 #X connect 116 3 111 0;
+#X connect 118 0 8 0;
+#X connect 118 0 7 0;
+#X connect 118 0 6 0;
+#X connect 118 0 5 0;
 #X coords 0 -1 1 1 500 500 1 100 100;
